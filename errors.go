@@ -20,7 +20,7 @@ type argError struct {
 }
 
 func (e *argError) Error() string {
-  return fmt.Sprintf("%d - %s, e.arg, e.prob")
+  return fmt.Sprintf("%d - %s", e.arg, e.prob)
 }
 
 func f2(arg int) (int, error) {
