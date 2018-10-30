@@ -21,6 +21,7 @@ func main() {
     fmt.Println("no message sent")
   }
 
+
   select {
   case msg := <- messages:
     fmt.Println("recieved message", msg)
